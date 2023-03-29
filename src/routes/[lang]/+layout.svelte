@@ -5,8 +5,9 @@
 </script>
 
 <div class="absolute right-4 top-4">
-	<a href="/en" class:underline={data.lang === 'en'}>en</a>
-	<a href="/sl" class:underline={data.lang === 'sl'}>sl</a>
+	{#each data.links as link}
+		<a href={link.href} class="m-1" class:underline={link.active}>{link.lang}</a>
+	{/each}
 </div>
 
 <slot />
