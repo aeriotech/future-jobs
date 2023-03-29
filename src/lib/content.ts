@@ -22,6 +22,7 @@ type Job = {
 
 type StaticContent = {
 	salary: string;
+	back: string;
 };
 
 export const languages = ['en', 'sl'];
@@ -29,9 +30,11 @@ export const languages = ['en', 'sl'];
 export const staticContent: Record<string, StaticContent> = {
 	sl: {
 		salary: 'Plača',
+		back: 'nazaj',
 	},
 	en: {
 		salary: 'Salary',
+		back: 'back',
 	},
 };
 
