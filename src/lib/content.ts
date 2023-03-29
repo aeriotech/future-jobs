@@ -20,7 +20,22 @@ type Job = {
 	sections: Section[];
 };
 
-const content: Record<string, Job> = {
+type StaticContent = {
+	salary: string;
+};
+
+export const languages = ['en', 'sl'];
+
+export const staticContent: Record<string, StaticContent> = {
+	sl: {
+		salary: 'Plača',
+	},
+	en: {
+		salary: 'Salary',
+	},
+};
+
+export const content: Record<string, Job> = {
 	'penetration-tester': {
 		title: { en: 'Penetration Tester', sl: 'Tester varnostnega prodora' },
 		image: penetrationTester,
@@ -633,5 +648,3 @@ const content: Record<string, Job> = {
 		],
 	},
 };
-
-export default content;

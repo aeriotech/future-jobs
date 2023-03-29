@@ -10,7 +10,7 @@
 		<h1 class="text-2xl">{job.title}</h1>
 
 		{#if job.salary}
-			<h2 class="text-xl font-bold">Salary: {job.salary} €</h2>
+			<h2 class="text-xl font-bold">{data.static.salary}: {job.salary} €</h2>
 		{/if}
 
 		{#each job.sections as section}

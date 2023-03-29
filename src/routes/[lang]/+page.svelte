@@ -1,11 +1,10 @@
 <script lang="ts">
-	import content from '$lib/content';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 </script>
 
-<div class="flex w-full min-h-screen justify-center items-center">
+<div class="flex w-full justify-center items-center">
 	<div class="md:grid md:grid-cols-2 lg:grid-cols-3 my-16 gap-4 flex flex-col">
 		{#each data.jobs as job}
 			<a href="/{data.lang}/{job.tag}">
