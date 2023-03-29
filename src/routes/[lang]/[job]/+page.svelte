@@ -6,7 +6,7 @@
 
 <a href="/{data.lang}" class="absolute left-4 top-4 hover:underline">{data.static.back}</a>
 
-<div class="flex p-16 justify-center">
+<div class="flex py-16 px-8 justify-center">
 	<div class="md:w-2/3 lg:w-1/2">
 		<h1 class="text-2xl">{data.job.title}</h1>
 
