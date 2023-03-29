@@ -10,10 +10,6 @@
 	<div class="md:w-2/3 lg:w-1/2">
 		<h1 class="text-2xl">{data.job.title}</h1>
 
-		{#if data.job.salary}
-			<h2 class="text-xl font-bold">{data.static.salary}: {data.job.salary} €</h2>
-		{/if}
-
 		{#each data.job.sections as section}
 			<h2 class="text-xl font-bold mt-6 mb-2">{section.title}</h2>
 			{#if typeof section.content === 'object'}

@@ -1,9 +1,9 @@
-import { content, staticContent } from '$lib/content';
+import { jobContent, staticContent } from '$lib/content';
 import { redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params: { job: jobLabel, lang } }) => {
-	const job = content[jobLabel];
+	const job = jobContent[jobLabel];
 	if (!job) throw redirect(302, `/${lang}`);
 
 	const localJob = {

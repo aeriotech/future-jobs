@@ -17,5 +17,5 @@ export const load: LayoutLoad = async ({ params: { lang }, url: { pathname } }) 
 		lang: l,
 	}));
 
-	return { links };
+	return { links, lang };
 };

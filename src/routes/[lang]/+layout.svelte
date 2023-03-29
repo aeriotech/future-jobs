@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { LayoutData } from './$types';
+	import about from '$lib/assets/about.svg';
 
 	export let data: LayoutData;
 </script>
@@ -11,3 +12,7 @@
 </div>
 
 <slot />
+
+<a href="/{data.lang}/about" class="fixed right-4 bottom-4">
+	<img src={about} alt="About us" width="32" />
+</a>

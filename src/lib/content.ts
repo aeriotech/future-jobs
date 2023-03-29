@@ -16,33 +16,92 @@ type Section = {
 type Job = {
 	title: Record<string, string>;
 	image: string;
-	salary?: string;
 	sections: Section[];
 };
 
 type StaticContent = {
-	salary: string;
 	back: string;
+	about: string;
+	aboutContent: (string | string[])[];
 };
 
-export const languages = ['en', 'sl'];
+export const languages = ['en', 'sl', 'lt'];
 
 export const staticContent: Record<string, StaticContent> = {
 	sl: {
-		salary: 'Plača',
 		back: 'nazaj',
+		about: 'O projektu',
+		aboutContent: [
+			'Celoten projekt je bil razdeljen na 3 korake in je trajal od 1. septembra 2022 do 1. septembra 2023, pri čemer smo za vsak korak obiskali države drug drugega. Projekt je financiral program Erasmus+. Partnerski organizaciji sta bili Elektrotehniško-Računalniška Strokovna Šola in Gimnazija Ljubljana (Šola, ki je prijavila projekt) in Center za Tehnološko in Inženirsko Usposabljanje v Vilni.',
+			'1. korak',
+			[
+				'Litovci so prišli v Slovenijo',
+				'Razdeljeni smo bili po skupinah in delali na svojih predstavitvah',
+				'Razpravljali smo o že obstoječih delovnih mestih in ocenili, kako verjetno in kako dolgo bodo ostala pomembna',
+			],
+			'2. korak',
+			[
+				'Slovenci smo odšli v Litvo',
+				'V Litvi smo se pogovarjali in sestavili seznam delovnih mest, ki morda že obstajajo, vendar bodo v bližnji prihodnosti pomembna oz. pomembnejša',
+			],
+			'3. korak',
+			[
+				'Litovci so odšli v Slovenijo',
+				'Podatke iz 2. koraka smo uporabili za oblikovanje spletne strani in brošure v slovenskem, litovskem in angleškem jeziku',
+			],
+			'Koordinirala Jernej Pustoslemšek in Jevgenij Chomaniuk',
+			'Ko-financirano s strani Evropske unije',
+		],
 	},
 	en: {
-		salary: 'Salary',
 		back: 'back',
+		about: 'About the project',
+		aboutContent: [
+			'This whole project was split into 3 steps and lasted from September 1st, 2022, to September 1st, 2023. It was financed by Erasmus+ program. There were 2 partner organizations – The Upper Secondary School of Electrical and Computer Engineering and Technical Gymnasium Ljubljana (the applicants for the project) and Vilnius technology and engineering training center. ',
+			'1st Step (with pictures)',
+			[
+				'Lithuanians went to Slovenia',
+				'We were split into groups to work on our own presentations',
+				'We discussed already existing jobs and evaluated them on how likely and how long they would stay relevant',
+			],
+			'2nd step (with pictures)',
+			[
+				'Slovenians went to Lithuania',
+				'While in Lithuania we discussed and compiled a list of jobs that might already exist but will be important/more relevant in the near future',
+			],
+			'3rd step (with pictures)',
+			[
+				'Lithuanians went to Slovenia',
+				'We used the data from the 2nd step to design a website and a brochure in Slovenian, Lithuanian and English',
+			],
+			'Coordinated by Jernej Pustoslemšek and Jevgenij Chomaniuk',
+			'Co-financed by the European union',
+		],
+	},
+	lt: {
+		back: 'atgal',
+		about: 'Apie projektą',
+		aboutContent: [
+			'Projektas buvo padalintas į tris žingsnius ir vyko nuo 2022 m. rugsėjo 1 d. iki 2023 m. rugsėjo 1 d. Projektas finansuotas Erasmus+ programa. Projekte dalyvauja dvi mokyklos - Liublianos elektros ir kompiuterių inžinerijos bei technikos gimnazijos aukštesnioji vidurinė mokykla ir Vilniaus technologijos ir inžinerijos mokymo centras.',
+			'1-as žingsnis (su nuotraukomis)',
+			[
+				'Pasiskirste i grupes atlikome prezentacija, kurioje aptareme dabartines profesijas ir jas įvertinome pagal tai, ar jos bus naudingos ateityje',
+			],
+			'2-as žingsnis (su nuotraukomis)',
+			['Apraseme profesijas, kurios atsiras ateityje del atsirandanciu naujoviu IT sferoje.'],
+			'3-as žingsnis (su nuotraukomis)',
+			[
+				'Naudodamiesi 2-ojo zingsnio duomenimis, sukureme internetine svetaine ir brosiura anglu, lietuviu bei slovenu kalbomis.',
+			],
+			'Projekta koordinavo Jevgenij Chomaniuk bei Jernej Pustoslemšek.',
+		],
 	},
 };
 
-export const content: Record<string, Job> = {
+export const jobContent: Record<string, Job> = {
 	'penetration-tester': {
 		title: { en: 'Penetration Tester', sl: 'Tester varnostnega prodora' },
 		image: penetrationTester,
-		salary: '97,383',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -124,7 +183,6 @@ export const content: Record<string, Job> = {
 	'malware-analyst': {
 		title: { en: 'Malware Analyst', sl: 'Analitik zlonamerne programske opreme' },
 		image: malwareAnalyst,
-		salary: '86,925',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -204,7 +262,6 @@ export const content: Record<string, Job> = {
 	'security-administrator': {
 		title: { en: 'Security Administrator', sl: 'Varnostni skrbnik' },
 		image: secutiryAdministrator,
-		salary: '90,532',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -286,7 +343,6 @@ export const content: Record<string, Job> = {
 	'prompt-engineer': {
 		title: { en: 'Prompt Engineer', sl: 'Inženir pozivov' },
 		image: promptEngineer,
-		salary: '135,000',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -330,7 +386,6 @@ export const content: Record<string, Job> = {
 	'computer-vision-engineer': {
 		title: { en: 'Computer Vision Engineer', sl: 'Inženir računalniškega vida' },
 		image: computerVisionEngineer,
-		salary: '64,420',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -419,7 +474,6 @@ export const content: Record<string, Job> = {
 	'ai-analyst': {
 		title: { en: 'Artificial Intelligence Analyst', sl: 'Analitik umetne inteligence' },
 		image: artificialIntelligenceAnalyst,
-		salary: '105,205',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -491,7 +545,6 @@ export const content: Record<string, Job> = {
 	'enterprise-architect': {
 		title: { en: 'Enterprise Architect', sl: 'Podjetniški arhitekt' },
 		image: enterpriseArhitect,
-		salary: 'unknown',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -549,7 +602,6 @@ export const content: Record<string, Job> = {
 	'devops-engineer': {
 		title: { en: 'DevOps Engineer', sl: 'DevOps Inženir' },
 		image: devopsEngineer,
-		salary: 'unknown',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
@@ -601,7 +653,6 @@ export const content: Record<string, Job> = {
 	'digital-transformation-specialist': {
 		title: { en: 'Digital Transformation Specialist', sl: 'Specialist za digitalno preobrazbo' },
 		image: digitalTraformationSpecialist,
-		salary: 'unknown',
 		sections: [
 			{
 				title: { en: 'Description', sl: 'Opis' },
