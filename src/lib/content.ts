@@ -7,6 +7,9 @@ import artificialIntelligenceAnalyst from '$lib/assets/ai-analyst.png';
 import enterpriseArhitect from '$lib/assets/enterprise-architect.png';
 import devopsEngineer from '$lib/assets/devops-engineer.png';
 import digitalTraformationSpecialist from '$lib/assets/digital-transformation-specialist.png';
+import euSl from '$lib/assets/eu_sl.svg';
+import euEn from '$lib/assets/eu_en.svg';
+import euLt from '$lib/assets/eu_lt.svg';
 
 type Section = {
 	title: Record<string, string>;
@@ -21,6 +24,7 @@ type Job = {
 
 type StaticContent = {
 	back: string;
+	euImg: string;
 	about: string;
 	aboutContent: (string | string[])[];
 };
@@ -30,6 +34,7 @@ export const languages = ['en', 'sl', 'lt'];
 export const staticContent: Record<string, StaticContent> = {
 	sl: {
 		back: 'nazaj',
+		euImg: euSl,
 		about: 'O projektu',
 		aboutContent: [
 			'Celoten projekt je bil razdeljen na 3 korake in je trajal od 1. septembra 2022 do 1. septembra 2023, pri čemer smo za vsak korak obiskali države drug drugega. Projekt je financiral program Erasmus+. Partnerski organizaciji sta bili Elektrotehniško-Računalniška Strokovna Šola in Gimnazija Ljubljana (Šola, ki je prijavila projekt) in Center za Tehnološko in Inženirsko Usposabljanje v Vilni.',
@@ -50,11 +55,11 @@ export const staticContent: Record<string, StaticContent> = {
 				'Podatke iz 2. koraka smo uporabili za oblikovanje spletne strani in brošure v slovenskem, litovskem in angleškem jeziku',
 			],
 			'Koordinirala Jernej Pustoslemšek in Jevgenij Chomaniuk',
-			'Ko-financirano s strani Evropske unije',
 		],
 	},
 	en: {
 		back: 'back',
+		euImg: euEn,
 		about: 'About the project',
 		aboutContent: [
 			'This whole project was split into 3 steps and lasted from September 1st, 2022, to September 1st, 2023. It was financed by Erasmus+ program. There were 2 partner organizations – The Upper Secondary School of Electrical and Computer Engineering and Technical Gymnasium Ljubljana (the applicants for the project) and Vilnius technology and engineering training center. ',
@@ -75,21 +80,21 @@ export const staticContent: Record<string, StaticContent> = {
 				'We used the data from the 2nd step to design a website and a brochure in Slovenian, Lithuanian and English',
 			],
 			'Coordinated by Jernej Pustoslemšek and Jevgenij Chomaniuk',
-			'Co-financed by the European union',
 		],
 	},
 	lt: {
 		back: 'atgal',
+		euImg: euLt,
 		about: 'Apie projektą',
 		aboutContent: [
 			'Projektas buvo padalintas į tris žingsnius ir vyko nuo 2022 m. rugsėjo 1 d. iki 2023 m. rugsėjo 1 d. Projektas finansuotas Erasmus+ programa. Projekte dalyvauja dvi mokyklos - Liublianos elektros ir kompiuterių inžinerijos bei technikos gimnazijos aukštesnioji vidurinė mokykla ir Vilniaus technologijos ir inžinerijos mokymo centras.',
-			'1-as žingsnis (su nuotraukomis)',
+			'1-as žingsnis',
 			[
-				'Pasiskirste i grupes atlikome prezentacija, kurioje aptareme dabartines profesijas ir jas įvertinome pagal tai, ar jos bus naudingos ateityje',
+				'Pasiskirste i grupes atlikome prezentacija, kurioje aptareme dabartines profesijas ir jas įvertinome pagal tai, ar jos bus naudingos ateityje.',
 			],
-			'2-as žingsnis (su nuotraukomis)',
+			'2-as žingsnis',
 			['Apraseme profesijas, kurios atsiras ateityje del atsirandanciu naujoviu IT sferoje.'],
-			'3-as žingsnis (su nuotraukomis)',
+			'3-as žingsnis',
 			[
 				'Naudodamiesi 2-ojo zingsnio duomenimis, sukureme internetine svetaine ir brosiura anglu, lietuviu bei slovenu kalbomis.',
 			],

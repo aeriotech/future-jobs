@@ -21,5 +21,9 @@
 				<p class="mt-8">{part}</p>
 			{/if}
 		{/each}
+
+		<div class="flex justify-center mt-8">
+			<img src={data.euImg} alt="eu_img" width="150" />
+		</div>
 	</div>
 </div>
