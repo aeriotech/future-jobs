@@ -105,18 +105,19 @@ export const staticContent: Record<string, StaticContent> = {
 
 export const jobContent: Record<string, Job> = {
 	'penetration-tester': {
-		title: { en: 'Penetration Tester', sl: 'Tester varnostnega prodora' },
+		title: { en: 'Penetration Tester', sl: 'Tester varnostnega prodora', lt: 'Penetration Tester' },
 		image: penetrationTester,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: 'As a penetration tester (pen tester for short), you’ll help businesses identify their security weaknesses before malicious hackers can do the same. You do this by attempting to breach computer networks with the company’s permission',
 					sl: 'Tester prodorov (pen tester) pomaga podjetjem prepoznati njihove varnostne šibkosti, preden to lahko storijo zlonamerni hekerji. To stori tako, da poskuša vdreti v računalniška omrežja s soglasjem podjetja.',
+					lt: 'Kaip testuotojas, atliekantis penetracijos testavimą, padėsite verslams nustatyti jų saugumo spragas, prieš nei piktybiniai žeklai tai padaro. Tai darote bandydami peržengti kompiuterių tinklus su įmonės leidimu.',
 				},
 			},
 			{
-				title: { en: 'Qualifications', sl: 'Kvalifikacije' },
+				title: { en: 'Qualifications', sl: 'Kvalifikacije', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'be able to write penetration tests',
@@ -128,10 +129,15 @@ export const jobContent: Record<string, Job> = {
 						'Predložiti poročila o rezultatih testov odločevalcem o varnost',
 						'Najti ranljivosti v obstoječi programski opremi/strojni opremi',
 					],
+					lt: [
+						'gebėjimas rašyti penetracijos testus',
+						'pateikti ataskaitas apie testų rezultatus saugumo sprendimų priėmėjams',
+						'rasti spragas esamame programiniame / aparatūros įrenginyje',
+					],
 				},
 			},
 			{
-				title: { en: 'Certifications', sl: 'Certifikati' },
+				title: { en: 'Certifications', sl: 'Certifikati', lt: 'Sertifikatai' },
 				content: {
 					en: [
 						'Certified Ethical Hacker (CEH)',
@@ -143,10 +149,15 @@ export const jobContent: Record<string, Job> = {
 						'CompTIA PenTest+',
 						'GIAC Certified Penetration Tester (GPEN)',
 					],
+					lt: [
+						'Certified Ethical Hacker (CEH)',
+						'CompTIA PenTest+',
+						'GIAC Certified Penetration Tester (GPEN)',
+					],
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: 'Kompetencijos' },
 				content: {
 					en: [
 						'A pen tester must be knowledgeable in as many Operating Systems as possible but must be an expert in at least one',
@@ -162,10 +173,17 @@ export const jobContent: Record<string, Job> = {
 						'Lomljenje in odklepanje zaščitenih (kriptiranih) ter navadnih gesel',
 						'Pisanje skript/kode',
 					],
+					lt: [
+						'Testuotojas, atliekantis penetracijos testavimą, turi turėti žinių apie kuo daugiau operacinių sistemų, bet turi būti ekspertas bent vienoje',
+						'Kiekvienas testuotojas, atliekantis penetracijos testavimą, turėtų turėti šiek tiek žinių apie duomenų bazes',
+						'Noras nuolat mokytis',
+						'Slaptažodžių ir maišų "kirpimas"',
+						'Rašyti skriptus / kodą',
+					],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: 'Užduotys' },
 				content: {
 					en: [
 						'Perform tests on applications, network devices, and cloud infrastructures',
@@ -181,23 +199,35 @@ export const jobContent: Record<string, Job> = {
 						'Pisanje tehničnih in izvršnih poročil',
 						'Razvijanje metodologij za testiranje prodiranja',
 					],
+					lt: [
+						'Atlikti testus taikomoms programoms, tinklo įrenginiams ir debesų infrastruktūroms',
+						'Tyrinėti ir eksperimentuoti su skirtingais atakos tipais',
+						'Atvirkštinis inžinerijos programinės įrangos arba neprašomo laiškų programos',
+						'Rašyti technines ir vykdomąsias ataskaitas',
+						'Kūrybinės metodikos, skirtos penetracijos testavimui, kūrimas',
+					],
 				},
 			},
 		],
 	},
 	'malware-analyst': {
-		title: { en: 'Malware Analyst', sl: 'Analitik zlonamerne programske opreme' },
+		title: {
+			en: 'Malware Analyst',
+			sl: 'Analitik zlonamerne programske opreme',
+			lt: 'Malware analitikas',
+		},
 		image: malwareAnalyst,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: 'Malware analysts are responsible for analysing and reverse engineering malware samples. They look at how these malicious programs work, what they do when they infect a system, and how they can be detected or prevented in the future.',
 					sl: 'Analitik zlonamerne programske opreme je odgovoren za analizo in razčlenjevanje vzorcev zlonamerne programske opreme. Ogleda si kako ti zlonamerni programi delujejo, kaj počnejo ko okužijo sistem, in kako jih je mogoče v prihodnosti zaznati ali preprečiti.',
+					lt: 'Malware analitikai atsakingi už kenksmingų programų analizę ir atvirkštinio inžinerijos procesą. Jie nagrinėja, kaip veikia šios kenksmingos programos, ką jos daro užkrėtus sistemą ir kaip jas galima aptikti ar ateityje užkirsti tam kelią.',
 				},
 			},
 			{
-				title: { en: 'Qualifications', sl: 'Kvalifikacije' },
+				title: { en: 'Qualifications', sl: 'Kvalifikacije', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'Analysing malware samples to identify their purpose and origin',
@@ -209,10 +239,15 @@ export const jobContent: Record<string, Job> = {
 						'Raziskovanje novih vrst zlonamerne programske opreme za pomoč pri ustvarjanju metod za zaznavanje novih groženj',
 						'Izvajanje forenzične analize na računalnikih za obnovitev podatkov z okvarjenih trdih diskov',
 					],
+					lt: [
+						'Kenksmingų programų analizės, siekiant nustatyti jų paskirtį ir kilmę',
+						'Naujų kenksmingų programų tyrimas, siekiant sukurti naujų grėsmių aptikimo metodus',
+						'Forensinis kompiuterių analizavimas, siekiant atkurti duomenis iš pažeistų kietųjų diskų',
+					],
 				},
 			},
 			{
-				title: { en: 'Certifications', sl: 'Certifikati' },
+				title: { en: 'Certifications', sl: 'Certifikati', lt: 'Sertifikatai' },
 				content: {
 					en: [
 						'OffSec - Offensive Security',
@@ -222,10 +257,14 @@ export const jobContent: Record<string, Job> = {
 						'OffSec - Offensive Security',
 						'CISSP - Certified Information Systems Security Professional',
 					],
+					lt: [
+						'OffSec - Offensive Security',
+						'CISSP - Certified Information Systems Security Professional',
+					],
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: 'Kompetencijos' },
 				content: {
 					en: [
 						'Knowledge of operating systems and networking',
@@ -241,10 +280,17 @@ export const jobContent: Record<string, Job> = {
 						'Sposobnost identifikacije, omejevanja, razstavljanja in blažitve 0day zlonamerne programske opreme',
 						'Sposobnost dela s programskimi jeziki visoke ravni',
 					],
+					lt: [
+						'Operacinių sistemų ir tinklo žinių turėjimas',
+						'Programavimo įgūdžiai',
+						'Supratimas apie saugumo principus',
+						'Gebėjimas identifikuoti, apriboti, išardyti ir mažinti nulinio dienos kenksmingų programų poveikį',
+						'Gebėjimas dirbti su aukšto lygio programavimo kalba',
+					],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: 'Užduotys' },
 				content: {
 					en: [
 						'Creates documentation for security policies',
@@ -260,23 +306,35 @@ export const jobContent: Record<string, Job> = {
 						'Odgovoren za preprečevanje širjenja zlonamerne programske opreme',
 						'Klasificira zlonamerno programsko opremo glede na grožnje in značilnosti',
 					],
+					lt: [
+						'Dokumentacijos kūrimas saugumo politikoms',
+						'Reaguojama į incidentų pranešimus',
+						'Rekomendacijų teikimas ir vykdymas, skirtas sistemoms atkurti po patirtos žalos',
+						'Atsakomybė už kenksmingų programų plitimo prevenciją',
+						'Kenksmingų programų klasifikavimas pagal grėsmes ir charakteristikas',
+					],
 				},
 			},
 		],
 	},
 	'security-administrator': {
-		title: { en: 'Security Administrator', sl: 'Varnostni skrbnik' },
+		title: {
+			en: 'Security Administrator',
+			sl: 'Varnostni skrbnik',
+			lt: 'Apsaugos administratorius',
+		},
 		image: secutiryAdministrator,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: 'Security administrators are responsible for the system overall rather than for specific parts. While network and systems administrators set up and maintain the system, security administrators take a step back for an overall view of security. Rather than focusing on hardware and software like their counterparts, they work to defend the system as a whole and keep it secure from threats',
 					sl: 'Skrbniki varnosti so odgovorni za sistem kot celoto, ne pa za posamezne dele. Medtem ko omrežni in sistemske skrbniki vzpostavljajo in vzdržujejo sistem, skrbniki za varnost stopijo korak nazaj za celostni pogled na varnost. Namesto osredotočanja na strojno in programsko opremo, kot njihovi kolegi, delajo na obrambi sistema kot celote in ga varujejo pred grožnjami.',
+					lt: 'Apsauga administratoriai yra atsakingi už sistemą kaip visumą, o ne už konkrečias dalis. Tuo tarpu tinklo ir sistemos administratoriai nustato ir palaiko sistemą, o saugumo administratoriai žiūri iš tolimesnio saugumo aspekto. Jie nekoncentruoja dėmesio į aparatūrą ir programinę įrangą, kaip jų kolegos, bet siekia apsaugoti sistemą kaip visumą nuo grėsmių.',
 				},
 			},
 			{
-				title: { en: 'Qualifications', sl: 'Kvalifikacije' },
+				title: { en: 'Qualifications', sl: 'Kvalifikacije', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'Defending systems against unauthorized access, modification and/or destruction',
@@ -288,10 +346,15 @@ export const jobContent: Record<string, Job> = {
 						'Skeniranje in ocenjevanje omrežja za ranljivosti',
 						'Konfiguriranje in podpora varnostnim orodjem, kot so požarni zidovi, protivirusni programi in sistemi za upravljanje popravkov',
 					],
+					lt: [
+						'Sistemos gynyba nuo neautorizuoto prieigos, modifikacijų ir/ar sunaikinimo',
+						'Tinklo skenavimas ir vertinimas siekiant nustatyti pažeidžiamumus',
+						'Konfigūruojant ir palaikant saugumo įrankius, pvz., ugniasienės, antivirusinės programinės įrangos ir atnaujinimų tvarkymo sistemų',
+					],
 				},
 			},
 			{
-				title: { en: 'Certifications', sl: 'Certifikati' },
+				title: { en: 'Certifications', sl: 'Certifikati', lt: 'Sertifikatai' },
 				content: {
 					en: [
 						'Security 5 Certification',
@@ -303,10 +366,15 @@ export const jobContent: Record<string, Job> = {
 						'CISM - Certified Information Security Manager',
 						'ISP - Industrial Security Professional Certification',
 					],
+					lt: [
+						'Security 5 Certification',
+						'CISM - Certified Information Security Manager',
+						'ISP - Industrial Security Professional Certification',
+					],
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: 'Kompetencijos' },
 				content: {
 					en: [
 						"An associate's or bachelor's degree in computer science, cyber security, or a related field",
@@ -322,10 +390,17 @@ export const jobContent: Record<string, Job> = {
 						'Močne analitične veščine, veščine kritičnega razmišljanja in reševanja problemov',
 						'Napredne certifikacije za usposabljanje so lahko koristne, saj boste imeli večje možnosti za pridobitev dela',
 					],
+					lt: [
+						'Kompiuterijos, kibernetinio saugumo ar susijusių sričių bakalauro ar magistro laipsnis',
+						'Geras supratimas ir žinios apie kompiuterius, tinklus ir saugumo sistemas',
+						'Geros mokymo, tarpasmeninės ir bendravimo įgūdžiai',
+						'Stiprūs analitiniai, kritiniai mąstymo ir sprendimo priėmimo įgūdžiai',
+						'Papildomas mokymas ir sertifikatai gali būti naudingi, todėl geriausia juos turėti. Tai taip pat padidina jūsų kvalifikaciją pareigoms atlikti',
+					],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: 'Užduotys' },
 				content: {
 					en: [
 						'Installing, administering, and troubleshooting network security solutions',
@@ -341,23 +416,31 @@ export const jobContent: Record<string, Job> = {
 						'Konfiguriranje in podpora varnostnih orodij, kot so požarni zidovi in protivirusni programi',
 						'Usposabljanje zaposlenih, da razumejo in uporabljajo varnostne protokole',
 					],
+					lt: [
+						'Įdiegti, administruoti ir taisyti tinklo saugumo sprendimus',
+						'Konfigūruoti saugumo sistemas, analizuoti saugumo reikalavimus ir rekomenduoti patobulinimus',
+						'Stebėti tinklo eismą ir stebėti įtartinas veiklas',
+						'Konfigūruoti ir palaikyti saugumo įrankius, pvz., ugniasienes ir antivirusines programas',
+						'Mokyti personalą suprasti ir naudoti saugumo protokolus',
+					],
 				},
 			},
 		],
 	},
 	'prompt-engineer': {
-		title: { en: 'Prompt Engineer', sl: 'Inženir pozivov' },
+		title: { en: 'Prompt Engineer', sl: 'Inženir pozivov', lt: 'Prompt inžinierius' },
 		image: promptEngineer,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: 'You will be developing models using machine learning algorithms and deep learning neural networks to interpret the user input to give a proper output. Think about how you can create art with just writing a sentence using for example DALL-E',
 					sl: 'Inženir pozivov razvija modele z uporabo algoritmov strojnega učenja in nevronskih mrež za obdelavo uporabniškega vnosa in zagotavljanje pravilnega izhoda. Razmislite kako lahko ustvarite umetnost s samo pisanjem stavkov s pomočjo DALL-E.',
+					lt: 'Jūs kurti modelius naudojant mašininio mokymosi algoritmus ir giliosios mokymosi neuroninius tinklus, kad galėtume interpretuoti naudotojo įvestį ir duoti tinkamą išvestį. Pagalvokite, kaip galite sukurti meną, naudodami tik vieną sakinį, pavyzdžiui, naudodami DALL-E.',
 				},
 			},
 			{
-				title: { en: 'Qualifications', sl: 'Kvalifikacije' },
+				title: { en: 'Qualifications', sl: 'Kvalifikacije', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'Statistical analysis and computing',
@@ -369,10 +452,15 @@ export const jobContent: Record<string, Job> = {
 						'Strojno učenje',
 						'Pretvarjanje modelov strojnega učenja v API-je',
 					],
+					lt: [
+						'Statistinė analizė ir skaičiavimai',
+						'Mašininis mokymasis ',
+						'Mašininio mokymosi modelių konvertavimas į API',
+					],
 				},
 			},
 			{
-				title: { en: 'Certificates', sl: '' },
+				title: { en: 'Certificates', sl: 'Certifikati', lt: '' },
 				content: {
 					en: [
 						'IBM AI Engineering Professional Certificate',
@@ -384,23 +472,33 @@ export const jobContent: Record<string, Job> = {
 						'AWS Certified Machine Learning',
 						'Professional Machine Learning Engineer by Google',
 					],
+					lt: [
+						'IBM AI Engineering Professional Certificate',
+						'AWS Certified Machine Learning',
+						'Professional Machine Learning Engineer by Google',
+					],
 				},
 			},
 		],
 	},
 	'computer-vision-engineer': {
-		title: { en: 'Computer Vision Engineer', sl: 'Inženir računalniškega vida' },
+		title: {
+			en: 'Computer Vision Engineer',
+			sl: 'Inženir računalniškega vida',
+			lt: 'Kompiuterinės vizijos inžinierius',
+		},
 		image: computerVisionEngineer,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: "As a penetration tester (pen tester for short), you'll help businesses identify their security weaknesses before malicious hackers can do the same. You do this by attempting to breach computer networks with the company's permission.",
 					sl: 'Inženir računalniškega vida uporablja raziskave računalniškega vida in strojnega učenja za reševanje realnih težav, kot je na primer vožnja brez voznika. Njihovo delo uporablja velike količine podatkov in statistike za izvajanje zapletenih nalog. Poleg tega je inženir računalniškega vida zadolžen, da veliko svojega časa posveti raziskovanju in uvedbi sistemov strojnega učenja in računalniškega vida za svoje stranke in nadrejene korporacije.',
+					lt: 'Kompiuterinės regos inžinieriai taiko kompiuterinės regos ir mašininio mokymosi tyrimus siekdami išspręsti realių pasaulio problemų, pvz., savarankiško važiavimo. Jų darbas naudoja didelius duomenų kiekius ir statistiką, siekiant atlikti sudėtingas užduotis. Be to, kompiuterinės regos inžinieriai užsiima daug laiko skirtu tyrimams ir mašininio mokymosi bei kompiuterinės regos sistemų diegimui savo klientų įmonėse ir didžiosiose korporacijose.',
 				},
 			},
 			{
-				title: { en: 'Qualifications', sl: 'Kvalifikacije' },
+				title: { en: 'Qualifications', sl: 'Kvalifikacije', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'Develop image analysis algorithms',
@@ -414,10 +512,16 @@ export const jobContent: Record<string, Job> = {
 						'Oblikovanje in ustvarjanje platform za obdelavo in vizualizacijo slik',
 						'Razumevanje programiranja toka podatkov',
 					],
+					lt: [
+						'Kurti vaizdų analizės algoritmus',
+						'Kurti giluminio mokymosi architektūras problemoms spręsti',
+						'Projektuoti ir kurti platformas vaizdų apdorojimui ir vizualizacijai',
+						'Suprasti duomenų srauto programavimą',
+					],
 				},
 			},
 			{
-				title: { en: 'Certificates', sl: 'Certifikati' },
+				title: { en: 'Certificates', sl: 'Certifikati', lt: 'Sertifikatai' },
 				content: {
 					en: [
 						'Certified Computer Vision Expert Certification (CCVE - AI3080)',
@@ -427,17 +531,26 @@ export const jobContent: Record<string, Job> = {
 						'Certified Computer Vision Expert Certification (CCVE - AI3080)',
 						'Certified Engineer in Computer Vision (CERTIFAI)',
 					],
+					lt: [
+						'Certified Computer Vision Expert Certification (CCVE - AI3080)',
+						'Certified Engineer in Computer Vision (CERTIFAI)',
+					],
 				},
 			},
 			{
-				title: { en: 'Future implications', sl: 'Posledice v prihodnosti' },
+				title: { en: 'Future implications', sl: 'Posledice v prihodnosti', lt: 'Būsimos kryptys' },
 				content: {
 					en: ['Self-driving', 'Drone delivery', 'Manufacturing automation'],
 					sl: ['Vozila brez voznika', 'Dostava z droni', 'Avtomatizacija proizvodnje'],
+					lt: [
+						'Savarankiškas vairavimas',
+						'Skraidančių dronų pristatymas',
+						'Gamybos automatizavimas',
+					],
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: '/' },
 				content: {
 					en: [
 						"Full-time degree in computer science or engineering with a specialisation in computer vision or advanced machine learning concepts (Masters, Bachelor's or PhD)",
@@ -453,10 +566,11 @@ export const jobContent: Record<string, Job> = {
 						'Osnovno poznavanje načel linearne algebre (razcep matrik, glavne komponente, zmanjšanje dimenzij, linearna transformacija, množenje matrik itd.)',
 						'Zmožnost razvoja modelov strojnega učenja',
 					],
+					lt: ['/'],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: '/' },
 				content: {
 					en: [
 						'Develop image analysis algorithms',
@@ -472,23 +586,29 @@ export const jobContent: Record<string, Job> = {
 						'Uporaba poznavanja knjižnic za računalniški vid',
 						'Razumevanje programiranja toka podatkov',
 					],
+					lt: ['/'],
 				},
 			},
 		],
 	},
 	'ai-analyst': {
-		title: { en: 'Artificial Intelligence Analyst', sl: 'Analitik umetne inteligence' },
+		title: {
+			en: 'Artificial Intelligence Analyst',
+			sl: 'Analitik umetne inteligence',
+			lt: 'Dirbtinio intelekto analitikas',
+		},
 		image: artificialIntelligenceAnalyst,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: 'You will be tasked with evaluating already developed artificial intelligence algorithms, to prove that they are not harmful or unethical and can be safely implemented.',
 					sl: 'Analitika umetne inteligence ocenjuje že razvite algoritme umetne inteligence, da dokaže, da niso škodljivi ali neetični ter da se jih lahko varno implementira.',
+					lt: 'Jūsų užduotis bus įvertinti jau sukurtus dirbtinio intelekto algoritmus, kad įrodytumėte, jog jie yra saugūs, etiški ir gali būti saugiai įdiegti.',
 				},
 			},
 			{
-				title: { en: 'Qualifications', sl: 'Kvalifikacije' },
+				title: { en: 'Qualifications', sl: 'Kvalifikacije', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'Deep understanding of AI and machine learning',
@@ -498,10 +618,14 @@ export const jobContent: Record<string, Job> = {
 						'Globoko razumevanje umetne inteligence in strojnega učenja',
 						'Poznavanje etičnega kodeksa in zakonodaje',
 					],
+					lt: [
+						'Gili dirbtinio intelekto ir mašininio mokymosi supratimas',
+						'Etikos kodekso ir teisės žinios',
+					],
 				},
 			},
 			{
-				title: { en: 'Certifications', sl: 'Certifikati' },
+				title: { en: 'Certifications', sl: 'Certifikati', lt: 'Sertifikatai' },
 				content: {
 					en: [
 						'Certified Computer Vision Expert Certification (CCVE – AI3080)',
@@ -511,10 +635,14 @@ export const jobContent: Record<string, Job> = {
 						'Certificiran strokovnjak za računalniški vid (CCVE - AI3080)',
 						'Certificirani inženir za računalniški vid (CERTIFAI)',
 					],
+					lt: [
+						'Certificiran strokovnjak za računalniški vid (CCVE - AI3080)',
+						'Certificirani inženir za računalniški vid (CERTIFAI)',
+					],
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: 'Kompetencijos' },
 				content: {
 					en: [
 						'experience in Natural Language Processing, logistic regression',
@@ -530,10 +658,16 @@ export const jobContent: Record<string, Job> = {
 						'izkušnje s pisanjem programske opreme in API-jev',
 						'izkušnje z integracijo sistemov',
 					],
+					lt: [
+						'Patirtis natūralių kalbų apdorojimo ir logistinės regresijos srityje',
+						'Stiprios žodinės ir rašytinės komunikacijos įgūdžiai',
+						'Sugebėjimas dirbti su keliais komandomis, siekiant suprasti verslo poreikius',
+						'Patirtis rašant programinę įrangą ir API Sistemos integracijos patirtis',
+					],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: 'Užduotys' },
 				content: {
 					en: ['monitoring', 'mitigating risks', 'training and support', 'compliance', 'security'],
 					sl: [
@@ -543,23 +677,31 @@ export const jobContent: Record<string, Job> = {
 						'skladnost',
 						'varnost',
 					],
+					lt: [
+						'Stebėjimas',
+						'Rizikos mažinimas',
+						'Mokymas ir palaikymas',
+						'Pritaikymas prie reikalavimų',
+						'Saugumas',
+					],
 				},
 			},
 		],
 	},
 	'enterprise-architect': {
-		title: { en: 'Enterprise Architect', sl: 'Podjetniški arhitekt' },
+		title: { en: 'Enterprise Architect', sl: 'Podjetniški arhitekt', lt: 'Verslo architektas ' },
 		image: enterpriseArhitect,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: 'The enterprise architect is responsible for the care and maintenance of IT networks in the organization. It ensures that everything from services to hardware is running smoothly to increase productivity on the premises of a business or organization.',
 					sl: 'Podjetniški arhitekt je odgovoren za skrb in vzdrževanje omrežij IT v organizaciji. Zagotavlja, da vse, od storitev do strojne opreme, nemoteno deluje, da bi se povečala produktivnost v prostorih podjetja ali organizacije. ',
+					lt: 'Įmonės architektas yra atsakingas už organizacijos IT tinklų priežiūrą ir palaikymą. Jis užtikrina, kad viskas, pradedant paslaugomis ir baigiant technine įranga, veiktų sklandžiai ir taip padidintų produktyvumą įmonės ar organizacijos patalpose.',
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						"Strategic thinking: The ability to understand and align an organization's goals and objectives with technology and business processes.",
@@ -575,10 +717,17 @@ export const jobContent: Record<string, Job> = {
 						'Komunikacijske sposobnosti: Sposobnost učinkovitega komuniciranja s deležniki, vključno z vodilnimi predstavniki poslovanja in IT strokovnjaki. ',
 						'Vodenje in upravljanje sprememb: Sposobnost vodenja in upravljanja sprememb znotraj organizacije, vključno s sposobnostjo vplivanja in pogajanja z deležniki. ',
 					],
+					lt: [
+						'Strateginis mąstymas: Gebėjimas suprasti ir suderinti organizacijos tikslus ir uždavinius su technologijomis ir verslo procesais.',
+						'Techninės žinios: "Techninės žinios": "Žinios apie įvairias technologijas ir jų panaudojimą verslo tikslams įgyvendinti.',
+						'Verslo išmanymas: pramonės šakos ir organizacijos, įskaitant jos finansus, operacijas ir rinkos dinamiką, išmanymas.',
+						'Bendravimo įgūdžiai: Gebėjimas veiksmingai bendrauti su suinteresuotosiomis šalimis, įskaitant verslo vadovus ir IT specialistus.',
+						'Lyderystė ir pokyčių valdymas: Gebėjimas vadovauti ir valdyti pokyčius organizacijoje, įskaitant gebėjimą daryti įtaką ir derėtis su suinteresuotosiomis šalimis',
+					],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: 'Užduotys' },
 				content: {
 					en: [
 						"Developing and maintaining the enterprise architecture: This includes creating models and diagrams that show the current and future state of the organization's technology landscape, as well as identifying and documenting the relationships between different systems and components.",
@@ -600,23 +749,34 @@ export const jobContent: Record<string, Job> = {
 						'Olajšanje komunikacije in sodelovanja: Arhitekti podjetja morajo olajšati komunikacijo in sodelovanje med različnimi ekipami in oddelki. ',
 						'Neprekinjeno spremljanje in ocenjevanje informacijsko-tehnološke pokrajine organizacije: Arhitekti podjetja morajo neprekinjeno spremljati informacijsko-tehnološko pokrajino organizacije, prepoznati področja za izboljšanje in izvesti spremembe, da se dosežejo optimalni poslovni rezultati. ',
 					],
+					lt: [
+						'Įmonės architektūros kūrimas ir palaikymas: tai apima modelių ir diagramų, rodančių dabartinę ir būsimą organizacijos technologijų aplinkos būklę, kūrimą, ryšių tarp skirtingų sistemų ir komponentų nustatymą ir dokumentavimą',
+						'Įmonių architektai turi glaudžiai bendradarbiauti su verslo vadovais, kad suprastų jų tikslus ir uždavinius, o tada remdamiesi šia informacija kurti ir tobulinti technologinius sprendimus, kurie padėtų juos įgyvendinti',
+						'Pokyčių valdymas: įmonių architektai turi gebėti valdyti pokyčius organizacijoje ir jiems vadovauti, įskaitant gebėjimą daryti įtaką ir derėtis su suinteresuotosiomis šalimis',
+						'Įgyvendinimo valdymas: užtikrinti geriausią IT įgyvendinimo praktiką, įskaitant atitiktį, rizikos valdymą ir suderinimą su verslo tikslais',
+						'Įmonių architektai dažnai yra atsakingi už organizacijos technologinės aplinkos standartų kūrimą ir įgyvendinimą, įskaitant duomenų standartus, saugumą ir taikomųjų programų kūrimą',
+						'Rizikos nustatymas ir valdymas: rizikos, susijusios su organizacijos informacinių technologijų aplinka ir naujų sprendimų diegimu, nustatymas, vertinimas ir mažinimas',
+						'Palengvinti bendravimą ir bendradarbiavimą: įmonių architektai turi palengvinti skirtingų komandų ir skyrių bendravimą ir bendradarbiavimą',
+						'Įmonių architektai turi nuolat stebėti ir vertinti organizacijos IT aplinką: įmonių architektai turi nuolat stebėti organizacijos IT aplinką, nustatyti tobulintinas sritis ir įgyvendinti pokyčius, kad būtų pasiekti optimalūs verslo rezultatai',
+					],
 				},
 			},
 		],
 	},
 	'devops-engineer': {
-		title: { en: 'DevOps Engineer', sl: 'DevOps Inženir' },
+		title: { en: 'DevOps Engineer', sl: 'DevOps Inženir', lt: 'DevOps inžinierius' },
 		image: devopsEngineer,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: 'DevOps engineers build, test, and maintain infrastructure and tools so that software can be developed and released. DevOps (development operations) is a set of procedures and processes that help organizations accelerate and automate individual aspects of software development, testing, release and updating.',
 					sl: 'Inženirji DevOps gradijo, preizkušajo in vzdržujejo infrastrukturo in orodja, da se lahko programska oprema razvija in izdaja. DevOps (development operacije) je sklop postopkov in procesov, ki organizacijam pomaga pospešiti in avtomatizirati posamezne vidike razvoja, testiranja, izdajanja in posodabljanja programske opreme. ',
+					lt: 'DevOps inžinieriai kuria, testuoja ir prižiūri infrastruktūrą bei įrankius, kad būtų galima kurti ir išleisti programinę įrangą. DevOps (angl. development operations) - tai procedūrų ir procesų rinkinys, padedantis organizacijoms paspartinti ir automatizuoti atskirus programinės įrangos kūrimo, testavimo, išleidimo ir atnaujinimo aspektus.',
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'Understanding of software development and deployment processes',
@@ -632,10 +792,17 @@ export const jobContent: Record<string, Job> = {
 						'Izkušnje s testiranjem zmogljivosti in prilagodljivosti',
 						'Poznavanje omrežne arhitekture in protokolov ',
 					],
+					lt: [
+						'Programinės įrangos kūrimo ir diegimo procesų supratimas',
+						'Debesijos infrastruktūros, ypač AWS, Azure arba GCP, išmanymas',
+						'Gebėjimas šalinti ir diagnozuoti visos sistemos problemas',
+						'Patirtis atliekant našumo ir masteliavimo bandymus',
+						'Tinklo architektūros ir protokolų išmanymas',
+					],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: 'Užduotys' },
 				content: {
 					en: [
 						'Automating software deployment and configuration management',
@@ -651,23 +818,35 @@ export const jobContent: Record<string, Job> = {
 						'Izvajanje testiranja in zagotavljanje kakovosti za nove izdaje programske opreme',
 						'Upravljanje in vzdrževanje sistemov za spremljanje in beleženje. ',
 					],
+					lt: [
+						'Programinės įrangos diegimo ir konfigūracijos valdymo automatizavimas',
+						'Serverių, tinklų ir saugyklų valdymas ir stebėjimas',
+						'CI/CD vamzdynų kūrimas ir priežiūra',
+						'Naujų programinės įrangos versijų testavimas ir kokybės užtikrinimas',
+						'Stebėsenos ir registravimo sistemų valdymas ir priežiūra',
+					],
 				},
 			},
 		],
 	},
 	'digital-transformation-specialist': {
-		title: { en: 'Digital Transformation Specialist', sl: 'Specialist za digitalno preobrazbo' },
+		title: {
+			en: 'Digital Transformation Specialist',
+			sl: 'Specialist za digitalno preobrazbo',
+			lt: 'Specialistas skaitmeninei transformacijai',
+		},
 		image: digitalTraformationSpecialist,
 		sections: [
 			{
-				title: { en: 'Description', sl: 'Opis' },
+				title: { en: 'Description', sl: 'Opis', lt: 'Aprašymas' },
 				content: {
 					en: "As a Digital Transformation Specialist, you will work as part of a team that focuses on helping our clients design and implement strategies to reinvent customer experience. You will advise, shape and deliver technology led transformation programs aiming to enhance end customers' digital experience.",
 					sl: 'Strokovnjak za digitalno preobrazbo podjetju pomaga pri oblikovanju in izvajanju strategij za prenovo uporabniške izkušnje. Svetuje, oblikuje in izvaja tehnološko vodene programe preoblikovanja, katerih cilj je izboljšati digitalno izkušnjo končnih strank.',
+					lt: 'Būdamas skaitmeninės transformacijos specialistu, dirbsite komandoje, kuri padeda klientams kurti ir įgyvendinti strategijas, kaip iš naujo sukurti klientų patirtį. Konsultuosite, formuosite ir įgyvendinsite technologijomis paremtas transformacijos programas, kuriomis siekiama pagerinti galutinių klientų skaitmeninę patirtį.',
 				},
 			},
 			{
-				title: { en: 'Competences', sl: 'Kompetence' },
+				title: { en: 'Competences', sl: 'Kompetence', lt: 'Kvalifikacijos' },
 				content: {
 					en: [
 						'Technical skills: A strong understanding of digital technologies and how they can be used to improve business processes and operations',
@@ -683,10 +862,17 @@ export const jobContent: Record<string, Job> = {
 						'Strateško razmišljanje: Sposobnost strateškega razmišljanja ter razvoja in izvajanja dolgoročnih načrtov, ki se ujemajo z organizacijskimi cilji',
 						'Upravljanje projektov: Sposobnost načrtovanja in izvajanja projektov ter upravljanja s časovnimi roki in viri za dosego rezultatov',
 					],
+					lt: [
+						"Techniniai įgūdžiai: 'Techniniai įgūdžiai: geras skaitmeninių technologijų supratimas ir jų panaudojimo verslo procesams ir operacijoms tobulinti'",
+						'Vadovavimas: Gebėjimas vadovauti ir valdyti komandas, efektyviai bendrauti su suinteresuotosiomis šalimis visais organizacijos lygmenimis',
+						'Strateginis mąstymas: Gebėjimas strategiškai mąstyti ir kurti bei įgyvendinti ilgalaikius planus, atitinkančius organizacijos tikslus',
+						'Duomenų analizė: Gebėjimas analizuoti ir interpretuoti duomenis, kad būtų galima priimti sprendimus ir įvertinti skaitmeninės transformacijos iniciatyvų sėkmę',
+						'Projektų valdymas: Gebėjimas veiksmingai planuoti ir vykdyti projektus, valdyti išteklius ir terminus, kad būtų pasiekti rezultatai',
+					],
 				},
 			},
 			{
-				title: { en: 'Tasks', sl: 'Naloge' },
+				title: { en: 'Tasks', sl: 'Naloge', lt: 'Užduotys' },
 				content: {
 					en: [
 						'Identifying and analysing business problems and opportunities: This may involve conducting research and working with stakeholders to understand their needs and goals',
@@ -701,6 +887,13 @@ export const jobContent: Record<string, Job> = {
 						'Merjenje uspeha digitalnih iniciativ: To lahko vključuje razvoj in izvajanje merilnikov za spremljanje napredka in ocenjevanje učinkovitosti digitalnih rešitev',
 						'Upravljanje in vodenje sprememb: To lahko vključuje razvoj in izvajanje načrtov za upravljanje s spremembami, da se naslovijo kulturni in organizacijski izzivi, ki se pojavijo med digitalno preobrazbo',
 						'Nenehno spremljanje in ocenjevanje digitalnega trga in tehnološkega napredka, da ostanete na tekočem in najdete nove priložnosti za podjetje',
+					],
+					lt: [
+						'Verslo problemų ir galimybių nustatymas ir analizė: Tai gali būti susiję su tyrimų atlikimu ir bendradarbiavimu su suinteresuotosiomis šalimis, siekiant suprasti jų poreikius ir tikslus',
+						'Skaitmeninių sprendimų kūrimas ir įgyvendinimas: Tai gali apimti skaitmeninių technologijų, pavyzdžiui, debesų kompiuterijos, dirbtinio intelekto ir daiktų interneto, parinkimą ir diegimą siekiant pagerinti verslo procesus ir operacijas',
+						'Skaitmeninės transformacijos iniciatyvų sėkmės vertinimas: Tai gali apimti metrikų, skirtų pažangai stebėti ir skaitmeninių sprendimų veiksmingumui vertinti, kūrimą ir diegimą',
+						'Pokyčių valdymas ir vadovavimas jiems: Tai gali apimti pokyčių valdymo planų, skirtų spręsti kultūrinius ir organizacinius iššūkius, kylančius skaitmeninės transformacijos metu, kūrimą ir įgyvendinimą',
+						'Nuolat stebėti ir vertinti skaitmeninę rinką ir technologijų pažangą, kad įmonė būtų nuolat atnaujinama ir rastų naujų galimybių',
 					],
 				},
 			},
