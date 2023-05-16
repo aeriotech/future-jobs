@@ -11,14 +11,20 @@
 		<h1 class="text-2xl">{data.about}</h1>
 
 		{#each data.aboutContent as part}
-			{#if typeof part === 'object'}
+			{#if part.type === 'list'}
 				<ul>
-					{#each part as line}
+					{#each part.content as line}
 						<li class="ml-8 list-disc">{line}</li>
 					{/each}
 				</ul>
-			{:else}
-				<p class="mt-8">{part}</p>
+			{:else if part.type === 'text'}
+				<p class="mt-8">{part.content}</p>
+			{:else if part.type === 'images'}
+				<div class="flex items-center flex-col 2xl:flex-row 2xl:w-1/2 gap-2 mt-8">
+					{#each part.content as img}
+						<img src={img} alt="img" />
+					{/each}
+				</div>
 			{/if}
 		{/each}
 

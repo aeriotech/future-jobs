@@ -10,6 +10,11 @@ import digitalTraformationSpecialist from '$lib/assets/digital-transformation-sp
 import euSl from '$lib/assets/eu_sl.svg';
 import euEn from '$lib/assets/eu_en.svg';
 import euLt from '$lib/assets/eu_lt.svg';
+import about1 from '$lib/assets/about_01.jpg';
+import about2 from '$lib/assets/about_02.jpg';
+import about3 from '$lib/assets/about_03.jpg';
+import about4 from '$lib/assets/about_04.jpg';
+import about5 from '$lib/assets/about_05.jpg';
 
 type Section = {
 	title: Record<string, string>;
@@ -26,7 +31,13 @@ type StaticContent = {
 	back: string;
 	euImg: string;
 	about: string;
-	aboutContent: (string | string[])[];
+	aboutContent: ContentElement[];
+};
+
+type Type = 'text' | 'list' | 'images';
+type ContentElement = {
+	type: Type;
+	content: any;
 };
 
 export const languages = ['en', 'sl', 'lt'];
@@ -37,24 +48,40 @@ export const staticContent: Record<string, StaticContent> = {
 		euImg: euSl,
 		about: 'O projektu',
 		aboutContent: [
-			'Celoten projekt je bil razdeljen na 3 korake in je trajal od 1. septembra 2022 do 1. septembra 2023, pri čemer smo za vsak korak obiskali države drug drugega. Projekt je financiral program Erasmus+. Partnerski organizaciji sta bili Elektrotehniško-Računalniška Strokovna Šola in Gimnazija Ljubljana (Šola, ki je prijavila projekt) in Center za Tehnološko in Inženirsko Usposabljanje v Vilni.',
-			'1. korak',
-			[
-				'Litovci so prišli v Slovenijo',
-				'Razdeljeni smo bili po skupinah in delali na svojih predstavitvah',
-				'Razpravljali smo o že obstoječih delovnih mestih in ocenili, kako verjetno in kako dolgo bodo ostala pomembna',
-			],
-			'2. korak',
-			[
-				'Slovenci smo odšli v Litvo',
-				'V Litvi smo se pogovarjali in sestavili seznam delovnih mest, ki morda že obstajajo, vendar bodo v bližnji prihodnosti pomembna oz. pomembnejša',
-			],
-			'3. korak',
-			[
-				'Litovci so odšli v Slovenijo',
-				'Podatke iz 2. koraka smo uporabili za oblikovanje spletne strani in brošure v slovenskem, litovskem in angleškem jeziku',
-			],
-			'Koordinirala Jernej Pustoslemšek in Jevgenij Chomaniuk',
+			{
+				type: 'text',
+				content:
+					'Celoten projekt je bil razdeljen na 3 korake in je trajal od 1. septembra 2022 do 1. septembra 2023, pri čemer smo za vsak korak obiskali države drug drugega. Projekt je financiral program Erasmus+. Partnerski organizaciji sta bili Elektrotehniško-Računalniška Strokovna Šola in Gimnazija Ljubljana (Šola, ki je prijavila projekt) in Center za Tehnološko in Inženirsko Usposabljanje v Vilni.',
+			},
+			{ type: 'text', content: '1. korak' },
+			{
+				type: 'list',
+				content: [
+					'Litovci so prišli v Slovenijo',
+					'Razdeljeni smo bili po skupinah in delali na svojih predstavitvah',
+					'Razpravljali smo o že obstoječih delovnih mestih in ocenili, kako verjetno in kako dolgo bodo ostala pomembna',
+				],
+			},
+			{ type: 'images', content: [about1, about2] },
+			{ type: 'text', content: '2. korak' },
+			{
+				type: 'list',
+				content: [
+					'Slovenci smo odšli v Litvo',
+					'V Litvi smo se pogovarjali in sestavili seznam delovnih mest, ki morda že obstajajo, vendar bodo v bližnji prihodnosti pomembna oz. pomembnejša',
+				],
+			},
+			{ type: 'images', content: [about3, about4] },
+			{ type: 'text', content: '3. korak' },
+			{
+				type: 'list',
+				content: [
+					'Litovci so odšli v Slovenijo',
+					'Podatke iz 2. koraka smo uporabili za oblikovanje spletne strani in brošure v slovenskem, litovskem in angleškem jeziku',
+				],
+			},
+			{ type: 'images', content: [about5] },
+			{ type: 'text', content: 'Koordinirala Jernej Pustoslemšek in Jevgenij Chomaniuk' },
 		],
 	},
 	en: {
@@ -62,43 +89,76 @@ export const staticContent: Record<string, StaticContent> = {
 		euImg: euEn,
 		about: 'About the project',
 		aboutContent: [
-			'This whole project was split into 3 steps and lasted from September 1st, 2022, to September 1st, 2023. It was financed by Erasmus+ program. There were 2 partner organizations – The Upper Secondary School of Electrical and Computer Engineering and Technical Gymnasium Ljubljana (the applicants for the project) and Vilnius technology and engineering training center. ',
-			'1st Step (with pictures)',
-			[
-				'Lithuanians went to Slovenia',
-				'We were split into groups to work on our own presentations',
-				'We discussed already existing jobs and evaluated them on how likely and how long they would stay relevant',
-			],
-			'2nd step (with pictures)',
-			[
-				'Slovenians went to Lithuania',
-				'While in Lithuania we discussed and compiled a list of jobs that might already exist but will be important/more relevant in the near future',
-			],
-			'3rd step (with pictures)',
-			[
-				'Lithuanians went to Slovenia',
-				'We used the data from the 2nd step to design a website and a brochure in Slovenian, Lithuanian and English',
-			],
-			'Coordinated by Jernej Pustoslemšek and Jevgenij Chomaniuk',
+			{
+				type: 'text',
+				content:
+					'This whole project was split into 3 steps and lasted from September 1st, 2022, to September 1st, 2023. It was financed by Erasmus+ program. There were 2 partner organizations – The Upper Secondary School of Electrical and Computer Engineering and Technical Gymnasium Ljubljana (the applicants for the project) and Vilnius technology and engineering training center. ',
+			},
+			{ type: 'text', content: '1st Step' },
+			{
+				type: 'list',
+				content: [
+					'Lithuanians went to Slovenia',
+					'We were split into groups to work on our own presentations',
+					'We discussed already existing jobs and evaluated them on how likely and how long they would stay relevant',
+				],
+			},
+			{ type: 'images', content: [about1, about2] },
+			{ type: 'text', content: '2nd step' },
+			{
+				type: 'list',
+				content: [
+					'Slovenians went to Lithuania',
+					'While in Lithuania we discussed and compiled a list of jobs that might already exist but will be important/more relevant in the near future',
+				],
+			},
+			{ type: 'images', content: [about3, about4] },
+			{ type: 'text', content: '3rd step' },
+			{
+				type: 'list',
+				content: [
+					'Lithuanians went to Slovenia',
+					'We used the data from the 2nd step to design a website and a brochure in Slovenian, Lithuanian and English',
+				],
+			},
+			{ type: 'images', content: [about5] },
+			{ type: 'text', content: 'Coordinated by Jernej Pustoslemšek and Jevgenij Chomaniuk' },
 		],
 	},
+
 	lt: {
 		back: 'atgal',
 		euImg: euLt,
 		about: 'Apie projektą',
 		aboutContent: [
-			'Projektas buvo padalintas į tris žingsnius ir vyko nuo 2022 m. rugsėjo 1 d. iki 2023 m. rugsėjo 1 d. Projektas finansuotas Erasmus+ programa. Projekte dalyvauja dvi mokyklos - Liublianos elektros ir kompiuterių inžinerijos bei technikos gimnazijos aukštesnioji vidurinė mokykla ir Vilniaus technologijos ir inžinerijos mokymo centras.',
-			'1-as žingsnis',
-			[
-				'Pasiskirste i grupes atlikome prezentacija, kurioje aptareme dabartines profesijas ir jas įvertinome pagal tai, ar jos bus naudingos ateityje.',
-			],
-			'2-as žingsnis',
-			['Apraseme profesijas, kurios atsiras ateityje del atsirandanciu naujoviu IT sferoje.'],
-			'3-as žingsnis',
-			[
-				'Naudodamiesi 2-ojo zingsnio duomenimis, sukureme internetine svetaine ir brosiura anglu, lietuviu bei slovenu kalbomis.',
-			],
-			'Projekta koordinavo Jevgenij Chomaniuk bei Jernej Pustoslemšek.',
+			{
+				type: 'text',
+				content:
+					'Projektas buvo padalintas į tris žingsnius ir vyko nuo 2022 m. rugsėjo 1 d. iki 2023 m. rugsėjo 1 d. Projektas finansuotas Erasmus+ programa. Projekte dalyvauja dvi mokyklos - Liublianos elektros ir kompiuterių inžinerijos bei technikos gimnazijos aukštesnioji vidurinė mokykla ir Vilniaus technologijos ir inžinerijos mokymo centras.',
+			},
+			{ type: 'text', content: '1-as žingsnis' },
+			{
+				type: 'list',
+				content: [
+					'Pasiskirste i grupes atlikome prezentacija, kurioje aptareme dabartines profesijas ir jas įvertinome pagal tai, ar jos bus naudingos ateityje.',
+				],
+			},
+			{ type: 'images', content: [about1, about2] },
+			{ type: 'text', content: '2-as žingsnis' },
+			{
+				type: 'list',
+				content: ['Apraseme profesijas, kurios gali buti naudingos ateityje.'],
+			},
+			{ type: 'images', content: [about3, about4] },
+			{ type: 'text', content: '3-as žingsnis' },
+			{
+				type: 'list',
+				content: [
+					'Pasiskirste i grupes atlikome prezentacija, kurioje aptareme dabartines profesijas ir jas įvertinome pagal tai, ar jos bus naudingos ateityje.',
+				],
+			},
+			{ type: 'images', content: [about5] },
+			{ type: 'text', content: 'Koordinavo Jernej Pustoslemšek ir Jevgenij Chomaniuk' },
 		],
 	},
 };
